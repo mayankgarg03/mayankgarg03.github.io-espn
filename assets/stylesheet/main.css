@@ -1,0 +1,494 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+}
+#topbar{
+    background-color: black;
+    text-align: right;
+    padding: 8px;
+}
+#topbar a{
+    color: #9C9D9F;
+}
+#topbar ul li{
+display: inline-block;
+vertical-align:middle;
+padding: 0px 20px;
+
+}
+#topbar img{
+    width: 35px;
+}
+#header{
+    border-radius: 7px;
+    margin: 15px 0px;
+    left: 2.5%;
+    position: absolute;
+    z-index: 100;
+    width: 95%;
+    padding: 0px 10px;
+    background-color:white;
+}
+#header .row {
+    justify-content: space-between;
+}
+#header .logo{
+    padding-top: 15px;
+    margin-left: 40px;
+}
+#header .logo img{
+width: 60px;
+}
+#header .subscribe{
+   padding-top: 20px;
+   /* margin-left: 600px; */
+   margin-right: 15px;
+}
+#header .subscribe a{
+    color: #585856;
+    text-transform: uppercase;
+}
+#header .subscribe ul li .dropdown{
+    display: none;
+    position: absolute;
+}
+
+#header .subscribe ul li .dropdown   a{
+    color:black;
+    text-transform: lowercase;  
+    margin-top: 20px;
+}
+#header .subscribe .dropdown{
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    /* width: 50%; */
+    padding: 0px 15px;
+    opacity: 0.98;
+    top: 60px;
+    
+}
+
+#header .subscribe ul li:hover .dropdown{
+    display: inline-block;
+}
+/* #header .subscribe ul li:hover i {
+    transform: rotateX(90deg);
+} */
+#header .subscribe .dropdown ul li{
+    display: inline-block;
+    margin-top: 23px;
+    padding: 0px 5px;
+    
+}
+#header .main-nav{
+ margin-left: 20px;  
+}
+#header .main-nav ul li a{
+    color: #585856;
+    text-transform: uppercase;
+    
+    
+}
+#header .main-nav ul li{
+    display: inline-block;
+    margin: 0px 12px;
+    padding: 20px 5px;
+}
+#header .main-nav .drop{
+    position: absolute;
+    background-color: #F5F5F5;
+    z-index: 10;
+    width:100px;
+    padding: 0px 15px;
+    top: 70px;
+    opacity: 0.98;
+}
+#header .main-nav  ul li .drop {
+    display: none;
+    position: absolute;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+   
+}
+#header .main-nav ul li .drop   a{
+    color:black;
+    margin-left: -15px;
+    text-transform: lowercase;
+    display: inline-block;
+  
+}
+#header .main-nav .drop ul li{
+    display: block;
+    margin-top: 19px;
+    padding: 0px 5px;
+
+}
+#header .main-nav ul li:hover .drop{
+    display: inline-block;   
+}
+#video {
+position: relative;
+
+}
+#video video{
+    width: 100%;
+}
+#video video .row{
+    justify-content: center;
+}
+#video .newgames{
+    position: absolute;
+    height: 350px;
+    bottom: 0px;
+    background-image: url("https://media.contentapi.ea.com/content/dam/eacom/common/ea-mega-tout-fifa-19-ab-video-background-xl.png.adapt.1456w.png");
+}
+#video .newgames img{
+    width: 100%;
+    margin-bottom: 35px;
+    margin-left: 70px;
+}
+#video .newgames .col {
+    width: 28%;
+    margin: 0px 10px;
+    text-align: center;
+}
+#video .newgames .col a{
+    color: white;
+    text-transform: uppercase;
+}
+.text{
+    position: absolute;
+   z-index: 1;
+    
+}
+.text img{
+    width: 10%;
+    margin-top: 200px;
+    margin-left: 480px;
+
+}
+.text a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    
+    
+}
+.text h2{
+    margin-top: 20px;
+    margin-left: 430px;
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+   
+}
+.text button{
+    background-color: red;
+    color: white;
+    margin-top: 20px;
+    margin-left: 500px; 
+    border: 1px solid red;
+   padding: 10px 20px;
+   font-size: 24px;
+}
+.section-1{
+    /* margin-top: 40px; */
+    padding: 50px 0px;
+    background-color: #F3F3F3;
+   
+}
+.section-1 h2{
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.section-1 img{
+    width: 100%;
+}
+.section-1 .row{
+flex-wrap: wrap;
+justify-content: center;
+}
+.section-1 .col{
+    width: 27%;
+    margin: 0px 8px 20px;
+    background-color: #fff;
+    transition: 0.5s;
+    /* margin-left: 60px; */
+    border: 1px solid #F3F3F3;
+}
+.section-1 h4{
+  margin-top: 40px;
+  margin-left: 15px;
+  color: lightcoral;
+}
+.section-1 h3{
+    margin-top: 20px;
+    margin-left: 15px;
+    color: lightslategray;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.section-1 p{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    color:black;
+    font-size: 20px;
+}
+.section-1 .col:hover{
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+}
+.section-2{
+    background-image: url("../images/madd19-tout-block-small-nike-99-gear-update-5x2-xl.jpg.adapt.crop5x2.1920w.jpg");
+    width:100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.section-2 h2{
+    z-index: 1;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 300px;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+.section-2 h3{
+    z-index: 1;
+    text-align: center;
+    color:white;
+    padding-top:30px ;
+   text-transform: uppercase;
+   font-size: 26px;
+}
+.section-2 button{
+    margin-left: 600px;
+    padding: 15px 15px;
+     margin-top: 40px;
+     font-size: 18px;
+     border: 1px solid white;
+     background-color: transparent;
+    
+}
+.section-2 button:hover{
+    transform: scale(1.2);
+}
+.section-3{
+    margin: 50px 0px;
+    background-color: #F3F3F3;
+    
+}
+.section-3 h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.section-3 img{
+width: 100%;
+}
+.section-3 .col:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+   
+    height: 405px;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0px;
+    top: 0px;
+    transition: 0.4s;
+}
+.section-3 .row{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-3 .col {
+    width: 30%;
+    margin: 0px 15px 15px;
+    position: relative;
+}
+.section-3 a span{
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+}
+.section-3 .list {
+    position: absolute;
+    margin-left: 180px;
+    top: 50%;
+    left: 0%;
+    opacity: 0;
+}
+.section-3 .col:hover .list{
+    opacity: 1;
+}
+.section-3 .col:hover span {
+transform: translateY(-20px);
+
+}
+/* .section-3 .col:hover .list{
+    transform: translateY(-10px);
+} */
+.section-3 .list ul li a{
+  
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transition: 0.6s;
+ 
+  
+  /* transform: translate(-10px); */
+}
+.section-3 .btn{
+    margin-top: 70px;
+    margin-left: -280px;
+    padding: 10px 30px;
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+#footer{
+    background-color: #fff;
+}
+#footer .topfoot{
+    margin-bottom: 80px; ;
+}
+#footer .topfoot a img{
+margin-left: 30px;
+width: 30%;
+}
+#footer .topfoot .text{
+    margin-top: 30px;
+}
+#footer .topfoot .text h3{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: black;
+    margin-left: 30px;
+}
+#footer .topfoot .text p{
+    margin-left: 30px;
+    color: black;
+     margin-top: 20px;
+     font-size: 16px;
+     letter-spacing: 2px;
+}
+.butons{
+    margin-left: 180px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.butons .btn1 button{
+    padding: 15px 30px;
+    color: white;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    font-size:16px; 
+}  
+.butons .btn2 button{
+    padding: 15px 30px;
+    color: white;
+    background-color: blue;
+    margin-top: 40px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size:16px;  
+}
+#midfoot{
+   background-image: url("../images/ea-section-bg-esrb-parents-blue-xl.jpg.adapt.1920w.jpg\ 1456w.jpg\ 1456w.jpg\ 1456w");
+   height: 100px;
+}
+#midfoot .text {
+    margin-left: 60px;
+    text-align: left;
+}
+#midfoot .text h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top:45px;
+}
+#midfoot .btn{
+    text-align: right;
+    margin-right: 150px;
+}
+#midfoot .btn button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 3px solid black;
+    text-transform: uppercase;
+    color: #585856;
+}
+#midfoot-2{
+    background-color:lightgrey;
+}
+#midfoot-2 .list ul li a{
+    color: black;
+}
+#midfoot-2 .list{
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#midfoot-2 .list ul li{
+   display: inline-block;
+   vertical-align: auto;
+   padding: 10px;
+}
+#midfoot-2 .social{
+    margin-left: 350px;
+    margin-top: 40px;
+}
+#midfoot-2 .social h4{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#midfoot-2 .social .icons{
+    padding-top: 20px;
+}
+#midfoot-2 .social .icons i{
+    padding:10px;
+   color: red;   
+   font-size: 20px;
+}
+#midfoot-2 .social .icons i:hover {
+    transform: scale(1.5,1.5);
+}
